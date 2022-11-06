@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* background-color: #000; */
+    /* color: black; */
+    margin: 0 30px;
+}
+#bg1{
+    background-color: rgba(0, 128, 0, 0.411);
+    width: 130px;
+    height: 90vh;
+    border-bottom-right-radius:190px;
+    position:absolute;
+    left: 0;
+}
+#bg2{
+    background-color: rgba(0, 128, 0, 0.411);
+    width: 130px;
+    height: 80vh;
+    border-top-left-radius:190px ;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: relative;
+    top: 10px;
+   
+}
+.nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.logo{
+    width:140px;
+    font-size:17px;
+    font-family: cursive;
+    color:rgb(59, 87, 11);
+}
+a{ 
+    display:inline-flex;
+    text-decoration: none;
+    /* color: whitesmoke; */
+    color: black;
+    height: 0;
+    position: relative;
+}
+.bars{
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 30px;
+    font-size: 26px;
+    display: none;
+}
+
+.position{
+    position: relative;
+    left: 4rem;
+}
+h4{
+    margin-top: 5rem;
+    letter-spacing: 4px;
+    font-size: 20px;
+    background-image:linear-gradient(115deg,#2da04a,blue,#a767e5,
+    #12bcfe,#44ce7b);
+    background-clip: text;
+    color: transparent;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.me{
+    width: 540px;
+    height: auto;
+}
+.me span{
+    background-image:linear-gradient(115deg,#3283ce,rgb(148, 189, 51),#3aec67,
+    rgb(50, 205, 115),#328db1);
+    background-clip: text;
+    color: transparent;
+}
+.me span:hover{
+    animation: play 1.6s ease-in infinite;
+}
+h2{
+     width:650px;
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+p{ 
+    color: rgb(104, 102, 102);
+    letter-spacing: 1px;
+}
+#image{
+    position: relative;
+    right: 130px;
+}
+.btn{
+    padding: 10px 15px;
+    border-radius: 30%;
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:transparent;
+    border: 1.5px solid green;
+    box-shadow: green 0px 0px 10px 0px ;
+    transition: .3s  ease-in-out;
+    color: black;
+}
+
+.cv{
+    display: inline-flex;
+    position: relative;
+    top: -11rem;
+    right: 1rem;
+    padding: 10.7px 16px;
+    align-items: center;
+}
+.nav a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    background-color: green;
+    position:absolute;
+    bottom: -25px;
+    transition: all .5s;
+}
+.nav a::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    background-color: green;
+    position:absolute;
+    top: -5px;
+    transition: all .5s;
+}
+.nav a:hover::after{
+    width:calc(100% + 6px) ;
+    opacity: 0.7;
+}
+.nav a:hover::before{
+    width:calc(100% + 6px);
+    opacity: 0.7;
+    
+}
+
+
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right:2rem;
+        color: green;
+        background: transparent;
+        cursor: pointer; 
+    }
+    .bars:hover{
+        opacity: 0.6;
+        transition: .4s;
+    }
+   .nav{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 1rem;
+   }
+   .logo{
+    position:relative;
+    left: 10px;
+   }
+   .nav ul {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    text-align: center;
+    background-image:linear-gradient(170deg, rgb(62, 145, 62), rgb(114, 184, 93)) ;
+    width: 100%;
+    padding:20px 0;
+    position: absolute;
+    z-index: 3;
+   }
+   .toggle ul{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+   }
+   .nav li a{
+    margin:  9px 0;
+    color: black;
+    font-size: larger;
+   }
+   .nav li:nth-child(odd){
+    background-image:linear-gradient(170deg, rgba(37, 121, 37, 0.678), rgba(114, 184, 93, 0.479)) ;
+   }
+   .nav li:nth-child(even){
+    background-image:linear-gradient(240deg,  rgba(37, 121, 37, 0.678), rgba(114, 184, 93, 0.479)) ;
+   }
+   .nav a::after,.nav a::before{
+    content: none;
+   }
+   .nav li a:hover{
+       font-size:1.3rem;
+       opacity: 1;
+       transition: .3s;
+   }
+
+   h4{
+    margin-top: 2rem;
+    position: relative;
+    left:-1rem;
+    font-size: 15px;
+   }
+   h2{
+     font-size: 2rem;
+     position: relative;
+     left: -1.2rem;
+   }
+   #image{
+    display: none;
+   }
+   .me p{
+    width: 350px;
+    position: relative;
+    left: -1.2rem;
+   }
+   .resume{
+    padding: 10.5px 17.5px;
+    position: relative;
+    top: 16rem;
+   }
+   .cv button{
+    position:fixed;
+    bottom: 2rem;
+    right: 1.6rem;
+   }
+   
+   #bg1{
+    width: 100px;
+    height: 70vh;
+    background-color: rgba(0, 128, 0, 0.205);
+   }
+   #bg2{
+    width: 100px;
+    height: 60vh;
+    background-color: rgba(0, 128, 0, 0.205);
+   }
+}
+@keyframes play{
+    0%{
+        background-position: 0px;
+    }
+    20%{
+        background-position: -110px;
+    }
+    35%{
+        background-position: -180px;
+    }
+    50%{
+        background-position: -210px;
+    }
+    80%{
+        background-position: -350px;
+    }
+    100%{
+        background-position: -390px;
+    }
+}
