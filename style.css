@@ -8,13 +8,15 @@ body{
     font-weight: 600;
     /* background-color: #000; */
     /* color: black; */
-    margin: 0 30px;
+    /* margin: 0 30px; */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-}
 
+}
+/* background-color:rgba(162, 110, 177, 0.411); */
+ 
 .container{
     width: 1365px;
     height: 625px;
@@ -22,9 +24,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgba(162, 110, 177, 0.411);
-    position:sticky;
-    left: 0;
+    background-color:rgba(165, 111, 180, 0.185);
+    
 }
 #bg1{
     background-color: rgba(0, 128, 0, 0.411);
@@ -42,7 +43,7 @@ body{
     border-top-left-radius:190px ;
     position:absolute;
     top: 110px;
-    right:0;
+    right: 0;
     bottom:0;
 }
 .bg12{
@@ -98,7 +99,8 @@ a{
 
 .position{
     position: relative;
-    left: 4rem;
+    /* left: 4rem; */
+    
 }
 h4{
     margin-top: 5rem;
@@ -158,14 +160,7 @@ p{
     color: black;
 }
 
-.cv{
-    display: inline-flex;
-    position: relative;
-    top: -11rem;
-    right: 1rem;
-    padding: 10.7px 16px;
-    align-items: center;
-}
+
 .nav a::after{
     content: "";
     height: 2px;
@@ -195,7 +190,36 @@ p{
     opacity: 0.7;
     
 }
-
+.aboutdiv{
+    width: 1365px;
+    height: 500px;
+     background-color:rgba(162, 110, 177, 0.411);
+}
+.aboutdiv2{
+    width: 1365px;
+    
+}
+.flag{
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(91, 36, 136);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 100px;
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.info{
+    width: 600px;
+    height: 200px;
+    border: 1px solid purple;
+    position: relative;
+    left: 30%;
+    top: 100px;
+}
 
 @media screen and (max-width:600px){
     *{
