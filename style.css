@@ -387,10 +387,16 @@ p{
     width: 340px;
     margin-top: 2rem;
     font-size: 15px;
+    color:#68acc7;
+    background-image: none;
    }
    h2{
     width: 340px;
      font-size: 1.7rem;
+   }
+   .me span{
+    background-image: none;
+    color:rgb(16, 114, 81);
    }
    #image{
     display: none;
@@ -473,10 +479,10 @@ p{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .skills span{
-    background-image:linear-gradient(115deg,#1a5286,rgb(216, 123, 37),#3c95a5,
-    rgb(9, 155, 72),#68acc7);
-    background-clip: text;
-    color: transparent;
+    background-image:none;
+    color: rgb(77, 170, 139);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 .skills span:hover{
     animation: play 1.6s ease-in infinite;
