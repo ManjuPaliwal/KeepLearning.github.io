@@ -1,4 +1,4 @@
-var bars = document.getElementById('bar');
+var bars = document.getElementById('menu');
 var nav = document.querySelector('nav');
 bars.addEventListener('click',function(){
     nav.classList.toggle('toggle')
